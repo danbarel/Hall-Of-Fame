@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+<link rel="stylesheet" href="/stylesheets/forms.css">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 text-center form-section">
+            <h1 class="mb-5">Edit <%= player.name %></h1>
+            <form action="/players/<%= player._id %>?_method=PUT" method="POST">
+                <div class="mb-4 form-group">
+                    <input class="form-control" type="text" name="player[name]" value="<%= player.name %>">
+                </div>
+                <div class="mb-4 form-group">
+                    <input class="form-control" type="text" name="player[image]" value="<%= player.image %>">
+                </div>
+                <div class="mb-4 form-group">
+                    <textarea class="form-control" name="player[description]" value="<%= player.description %>"><%= player.description %></textarea>
+                </div>
+                <div class="mb-4 form-group">
+                    <button class="btn btn-sm btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<% include ../partials/footer %>
+

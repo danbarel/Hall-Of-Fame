@@ -1,0 +1,25 @@
+<% include ../partials/header %> 
+<link rel="stylesheet" href="/stylesheets/playerindex.css">
+<div class="container my-4">
+     <div class="row" style="display:flex; flex-wrap: wrap;">
+        <% players.forEach(function(player){ %>
+            <div class="col-md-3 col-sm-6 mb-3">
+                    <a href="/players/<%= player._id %>">
+                        <div class="card bg-dark text-white text-left">
+                            <img src="<%= player.image %>" class="card-img" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title"><%= player.name %></h5>
+                                    <% if(player.description.length > 100) { %>
+                                        <p class="card-text mt-5"><%= player.description.substring(0, 100)%>...</p>
+                                    <% } else { %>
+                                        <p class="card-text mt-5"><%= player.description %></p>
+                                    <% } %>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>

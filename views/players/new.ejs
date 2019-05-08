@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+<link rel="stylesheet" href="/stylesheets/forms.css">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 text-center form-section">
+            <h1 class="mb-5">Add new player to the Hall Of Fame</h1>
+            <form action="/players" method="POST">
+                <div class="mb-4 form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Full name">
+                </div>
+                <div class="mb-4 form-group">
+                    <input class="form-control" type="text" name="image" placeholder="Image URL">
+                </div>
+                <div class="mb-4 form-group">
+                    <textarea class="form-control" name="description" placeholder="Add important career moments and highlights of this player"></textarea>
+                </div>
+                <div class="mb-4 form-group">
+                    <button class="btn btn-sm btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<% include ../partials/footer %>
+

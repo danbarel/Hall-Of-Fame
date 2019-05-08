@@ -1,0 +1,64 @@
+html {
+    height:100%;    
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;  
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Kreon', serif;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-family: 'Kreon', serif; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f4f4f4;
+}
+
+.container {
+    padding: 20px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    background-color: #f3cf55;
+    color: #fff;
+}    
+
+.btn:hover {
+    background-color: #e3b927;
+    color: #fff;
+}
+
+.delete {
+    background-color: #cd3333;
+}    
+
+.delete:hover {
+    background-color: #a72626;
+}
+
+.edit {
+    background-color: #5DA4BA;
+}    
+
+.edit:hover {
+    background-color: #4e889a;
+}
+
+#delete-form {
+    display: inline;
+}

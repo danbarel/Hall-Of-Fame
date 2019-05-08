@@ -1,0 +1,17 @@
+.card {
+    border: none;
+}
+
+.card:hover {
+    border-top: 4px solid #f3cf55;
+}
+
+.card-text {
+    font-size: 0.8em;
+}
+
+.card-img {
+    opacity: 0.75;
+    height: 255px;
+    object-fit: cover;
+}
